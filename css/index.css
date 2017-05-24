@@ -12,16 +12,16 @@ html {
   user-select: none;
 }
 
-#mynav {
-  text-align: center;
-}
-
 #mynav-title {
-  font-family: 'Archivo Black', sans-serif;
-  display: inline-block;
+  font-weight: bold;
   font-size: 64px;
   margin: auto;
-  /*margin-top: 25px;*/
   padding: 25px;
   background-color: #ef5350;
+}
+
+.shrink {
+  font-size: 32px;
+  padding: 0px;
+  background-color: transparent;
 }
