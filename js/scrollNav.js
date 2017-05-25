@@ -1,5 +1,12 @@
+$.getScript('js/scrollspeedmonitor.js')
+
 $(function() {
   $('#mynav-title').data('size', 'big');
+});
+
+var scrollSpeedMonitor = new ScrollSpeedMonitor(function (speedInPxPerMs, timeStamp, newDirection)
+{
+    console.log('Scroll speed: ' + speedInPxPerMs);
 });
 
 $(window).scroll(function() {
@@ -26,7 +33,7 @@ $(window).scroll(function() {
         'padding-bottom' : 25,
         'padding-left' : 25,
         fontSize: '64px'
-      }, 250);
+      }, 50);
       $('#mynav-title').addClass('z-depth-3');
     }
   }
