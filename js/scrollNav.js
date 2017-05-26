@@ -1,7 +1,7 @@
-$(document).scroll(function() {
-  if ($(this).scrollTop() > 0) { //Adjust 150
-    $('#mynav-title').addClass('shrinked');
+$(document).on("scroll", function() {
+  if ($(document).scrollTop() > 10) {
+    $('#mynav-title').addClass("shrink");
   } else {
-    $('#mynav-title').removeClass('shrinked');
+    $('#mynav-title').removeClass("shrink");
   }
 });
