@@ -32,24 +32,23 @@ html {
 
 #mySearch {
   display: inline-block;
-  
+
   -webkit-transition: width 0.3s;
 	-moz-transition: width 0.3s;
 	transition: width 0.3s;
-}
-
-.collapsed {
-
 }
 
 input[type="search"] {
   height: 64px !important;
 }
 
-.searchOpen {
-  right: 100% !important;
-  -webkit-transition: left 0.3s ease-out;
-  -moz-transition: left 0.3s ease-out;
-  -o-transition: left 0.3s ease-out;
-  transition: left 0.3s ease-out;
+.input-field input[type=search] {
+  display: block;
+  line-height: inherit;
+  padding-left: 1rem;
+  width: 17rem;
+}
+
+.mySearchOpen {
+  
 }
