@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url("colors.var.css");
 html {
   /*background-color: #212121;*/
 }
@@ -12,13 +12,12 @@ html {
   user-select: none;
 }
 
-#mynav-title {
+#myNav-title {
   font-weight: bold;
   font-size: 64px;
   margin: auto;
   padding: 25px;
   background-color: #ef5350;
-
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
@@ -29,4 +28,28 @@ html {
   padding: 0 !important;
   font-size: 48px !important;
   box-shadow: none !important;
+}
+
+#mySearch {
+  display: inline-block;
+  
+  -webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+.collapsed {
+
+}
+
+input[type="search"] {
+  height: 64px !important;
+}
+
+.searchOpen {
+  right: 100% !important;
+  -webkit-transition: left 0.3s ease-out;
+  -moz-transition: left 0.3s ease-out;
+  -o-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
 }
