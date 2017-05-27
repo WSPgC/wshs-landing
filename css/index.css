@@ -18,17 +18,10 @@ html {
   margin: auto;
   padding: 25px;
   background-color: #ef5350;
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.myNav-titleShort {
-  -webkit-transition: all 0.05s ease;
-  -moz-transition: all 0.05s ease;
-  -o-transition: all 0.05s ease;
-  transition: all 5s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .shrink {
@@ -54,7 +47,7 @@ input[type="search"] {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 10s ease;
+  transition: all 1s ease;
 }
 
 .mySearchHidden {
