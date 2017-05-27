@@ -1,19 +1,30 @@
 $(document).ready(function() {
-  $('#mySearch').css('width', '0');
-  $('#mySearch').hide();
+  $('#mySearch').addClass('mySearchHidden');
+  // $('#search').hide();
 });
 
 $('#myTouchSearch').click(function() {
-  $('#search').toggleClass('mySearchOpen');
-  if ($('#search').hasClass('mySearchOpen')) {
-    $('#search').show();
-    $('#search').transition({width: 1000}, 1000)
-
-  } else {
-    $('#search').transition({x: 100}, 500)
-    $('#search').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-      function(e) {
-        // code to execute after transition ends
-      });
-  }
+  $('#mySearch').removeClass('mySearchHidden');
+  $('#mySearch').addClass('mySearchVisible');
 });
+
+
+
+
+
+
+
+
+
+// $('#search').animate({width: 100+'%'}, 500);
+// if ($('#mySearch').hasClass('mySearchOpen')) {
+//   $('#mySearch').show();
+//   $('#mySearch').transition({x: '+=100%'}, 500, 'ease');
+//   $('#search').focus();
+// } else {
+//   $('#mySearch').transition({x: '+= -100%'}, 500, 'ease');
+//   $('#mySearch').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+//     function(e) {
+//       $('#mySearch').hide();
+//     });
+// }

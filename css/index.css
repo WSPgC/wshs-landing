@@ -18,24 +18,23 @@ html {
   margin: auto;
   padding: 25px;
   background-color: #ef5350;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.myNav-titleShort {
+  -webkit-transition: all 0.05s ease;
+  -moz-transition: all 0.05s ease;
+  -o-transition: all 0.05s ease;
+  transition: all 5s ease;
 }
 
 .shrink {
   padding: 0 !important;
   font-size: 48px !important;
   box-shadow: none !important;
-}
-
-#mySearch {
-  display: inline-block;
-
-  -webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	transition: width 0.3s;
 }
 
 input[type="search"] {
@@ -49,6 +48,19 @@ input[type="search"] {
   width: 17rem;
 }
 
-.mySearchOpen {
-  
+#mySearch {
+  display: inline-block;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 10s ease;
+}
+
+.mySearchHidden {
+  max-width: 0 !important;
+}
+
+.mySearchVisible {
+  max-width: 100% !important;
 }
