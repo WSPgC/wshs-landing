@@ -13,11 +13,13 @@ html {
 }
 
 #myNav-title {
+  cursor: default;
   font-weight: bold;
   font-size: 64px;
   margin: auto;
   padding: 25px;
   background-color: #ef5350;
+  /*Below transitions are used when making the SOUTH header large again, when user scrolls back to top*/
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -25,6 +27,11 @@ html {
 }
 
 .shrink {
+  /*Below transitions are used when making the SOUTH header small, when user scrolls down*/
+  -webkit-transition: all 0.25s ease !important;
+  -moz-transition: all 0.25s ease !important;
+  -o-transition: all 0.25s ease !important;
+  transition: all 0.25s ease !important;
   padding: 0 !important;
   font-size: 48px !important;
   box-shadow: none !important;
@@ -44,13 +51,18 @@ input[type="search"] {
 #mySearch {
   display: inline-block;
   width: 0vw;
-
-  -webkit-transition: all 0.45s ease;
-  -moz-transition: all 0.45s ease;
-  -o-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  /*Below transitions used for the right slide of the search bar*/
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 #mySearch.visible, #search {
+  /*Below transitions used for the left slide of the search bar, !important is used for overridding the #mySearch time values*/
+  -webkit-transition: all 0.45s ease !important;
+  -moz-transition: all 0.45s ease !important;
+  -o-transition: all 0.45s ease !important;
+  transition: all 0.45s ease !important;
   width: 20vw;
 }
