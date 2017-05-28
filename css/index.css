@@ -66,3 +66,13 @@ input[type="search"] {
   transition: all 0.45s ease !important;
   width: 20vw;
 }
+
+.left {
+  margin-left: 0.75vw;
+}
+
+.material-tooltip {
+  padding: 5px 4px;
+  font-size: 0.75rem;
+  white-space: pre;
+}
