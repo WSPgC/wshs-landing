@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  $('#mySearch').addClass('mySearchHidden');
-  // $('#search').hide();
+  $('#search').blur(function() {
+    $('#mySearch').removeClass('visible');
+  });
 });
 
 $('#myTouchSearch').click(function() {
-  $('#mySearch').removeClass('mySearchHidden');
-  $('#mySearch').addClass('mySearchVisible');
+  $('#mySearch').addClass('visible');
+  $('#search').focus();
 });
 
 

@@ -43,17 +43,14 @@ input[type="search"] {
 
 #mySearch {
   display: inline-block;
+  width: 0vw;
 
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
 
-.mySearchHidden {
-  max-width: 0 !important;
-}
-
-.mySearchVisible {
-  max-width: 100% !important;
+#mySearch.visible, #search {
+  width: 20vw;
 }
