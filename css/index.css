@@ -18,7 +18,7 @@ html {
   font-size: 64px;
   margin: auto;
   padding: 25px;
-  background-color: #ef5350;
+  background-color: var(--md-red-400);
   /*Below transitions are used when making the SOUTH header large again, when user scrolls back to top*/
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
@@ -75,4 +75,18 @@ input[type="search"] {
   padding: 5px 4px;
   font-size: 0.8em;
   white-space: pre;
+}
+
+.table-of-contents a {
+  padding-left: 5px !important;
+}
+
+.table-of-contents a:hover {
+  border-left: 1px solid var(--md-red-400);
+}
+
+.table-of-contents a.active {
+  font-weight: 500;
+  padding-left: 18px;
+  border-left: 2px solid var(--md-red-400);
 }
