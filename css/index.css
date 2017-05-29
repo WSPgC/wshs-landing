@@ -2,7 +2,9 @@
 html {
   /*background-color: #212121;*/
 }
-
+#content {
+  margin-top: 15vh;
+}
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -89,4 +91,19 @@ input[type="search"] {
   font-weight: 500;
   padding-left: 18px;
   border-left: 2px solid var(--md-red-400);
+}
+
+#dirSel.container {
+  width: 11vw;
+}
+
+input.select-dropdown {
+    /*text-align: center;*/
+    font-size: 2rem !important;
+    color: var(--md-red-400);
+}
+
+.caret {
+  font-size: 1rem !important;
+  color: var(--md-red-400) !important;
 }

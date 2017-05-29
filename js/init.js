@@ -3,3 +3,7 @@ $(document).ready(function() {
     scrollOffset: 64
   });
 });
+
+$(document).ready(function() {
+    $('select').material_select();
+  });
