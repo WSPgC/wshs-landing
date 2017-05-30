@@ -79,6 +79,12 @@ input[type="search"] {
   white-space: pre;
 }
 
+#toc {
+  position: fixed;
+  top: 11vh;
+  right: -1.5vw;
+}
+
 .table-of-contents a {
   padding-left: 5px !important;
 }
@@ -93,17 +99,47 @@ input[type="search"] {
   border-left: 2px solid var(--md-red-400);
 }
 
+.chipLine {
+  margin-left: 10vw;
+  width: 80vw;
+}
+
+#addChipLine {
+  margin-bottom: 5vh;
+}
+
+.add {
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 8px;
+}
+
+/*#dirSel {
+
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
 #dirSel.container {
-  width: 11vw;
+  width: 21vw;
+  background-color: var(--md-red-400);
 }
 
 input.select-dropdown {
-    /*text-align: center;*/
-    font-size: 2rem !important;
-    color: var(--md-red-400);
+  margin-bottom: 0 !!important;
+  text-align: center;
+  font-size: 2rem !important;
+  color: #fff;
 }
 
 .caret {
   font-size: 1rem !important;
-  color: var(--md-red-400) !important;
-}
+  color: #fff !important;
+}*/
