@@ -1,7 +1,11 @@
 function createChip($dirChip) {
   var chipName = String($dirChip);
+  var chipNameQ = "\'" + $dirChip + "\'";
   var chipID = chipName.replace(/\s+/g, '');
-  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons add' onclick='addChip(" + chipName + ")'>add</i></div>";
+  console.log(chipName);
+  console.log(chipID);
+  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons add' onclick='addChip(\""+chipName+"\")'>add</i></div>";
+  console.log(chip);
   $('#addChipLine').append(chip);
 }
 
@@ -9,7 +13,7 @@ createChip('Art');
 createChip('Bilingual');
 createChip('Business and Marketing');
 createChip('English');
-createChip('F.A.C.E');
+createChip('FACE');
 createChip('Guidance');
 createChip('Libary');
 createChip('Math');
@@ -26,7 +30,7 @@ createChip('World Language');
 function addChip($dirChip) {
   var chipName = String($dirChip);
   var chipID = chipName.replace(/\s+/g, '');
-  $(chipID).remove();
-  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons close'>close</i></div>";
+  $('#' + chipID).remove();
+  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons close' onclick='createChip(\""+chipName+"\")'>close</i></div>";
   $('#finalChipLine').append(chip);
 }
