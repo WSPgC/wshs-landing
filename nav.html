@@ -1,12 +1,13 @@
-<div class="navbar-fixed">
+<div id="myNavBar" class="navbar-fixed">
   <nav>
     <div class="nav-wrapper red lighten-1">
-      <div id="myNav-title" class="brand-logo center z-depth-3 unselectable"><a id="indexLink" href="index.html">SOUTH</a></div>
-      <ul class="left">
+      <a href="#" data-activates="sideBar" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div id="myNav-title" class="brand-logo center z-depth-3 unselectable myNav-title"><a id="indexLink" href="index.html">SOUTH</a></div>
+      <ul class="left hide-on-med-and-down">
         <li><a class="waves-effect tooltipped" data-position="bottom" data-delay="25" data-tooltip="Staff&#10;Directory" href="dir.html"><i class="material-icons unselectable">contacts</i></a></li>
       </ul>
       <ul class="right">
-        <li><a class="waves-effect"><i class="material-icons unselectable">people</i></a></li>
+        <li><a class="waves-effect hide-on-med-and-down"><i class="material-icons unselectable">people</i></a></li>
         <li><a id="myTouchSearch" class="waves-effect"><i class="material-icons unselectable">search</i></a></li>
         <li>
           <div class="input-field active" id="mySearch">
@@ -15,6 +16,12 @@
           </div>
         </li>
       </ul>
+      <ul class="side-nav" id="sideBar">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
     </div>
   </nav>
 </div>

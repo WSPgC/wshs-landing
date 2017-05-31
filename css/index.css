@@ -2,6 +2,11 @@
 html {
   /*background-color: #212121;*/
 }
+
+.navbar-fixed {
+  z-index: auto !important;
+}
+
 #content {
   margin-top: 12vh;
 }
@@ -14,16 +19,8 @@ html {
   user-select: none;
 }
 
-@media only screen and (max-width: 600px) {
-  #myNav-title {
-    width: 50vw !important;
-    font-size: 2rem !important;
-    padding: 0.7815rem;
-  }
-}
-
 #myNav-title {
-  width: 25vw;
+  /*width: 25vw;*/
   cursor: pointer;
   font-weight: bold;
   font-size: 4rem;
@@ -44,8 +41,25 @@ html {
   -o-transition: all 0.25s ease !important;
   transition: all 0.25s ease !important;
   padding: 0 !important;
-  font-size: 48px !important;
+  font-size: 3em !important;
   box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #myNav-title {
+    font-size: 2.5rem;
+    padding: 0.7815rem;
+  }
+  .shrink {
+    /*Below transitions are used when making the SOUTH header small, when user scrolls down*/
+    -webkit-transition: all 0.25s ease !important;
+    -moz-transition: all 0.25s ease !important;
+    -o-transition: all 0.25s ease !important;
+    transition: all 0.25s ease !important;
+    padding: 0 !important;
+    font-size: 2rem !important;
+    box-shadow: none !important;
+  }
 }
 
 input[type="search"] {
@@ -124,31 +138,3 @@ input[type="search"] {
   line-height: 32px;
   padding-left: 8px;
 }
-
-/*#dirSel {
-
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  padding: 0 2rem;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-}
-
-#dirSel.container {
-  width: 21vw;
-  background-color: var(--md-red-400);
-}
-
-input.select-dropdown {
-  margin-bottom: 0 !!important;
-  text-align: center;
-  font-size: 2rem !important;
-  color: #fff;
-}
-
-.caret {
-  font-size: 1rem !important;
-  color: #fff !important;
-}*/
