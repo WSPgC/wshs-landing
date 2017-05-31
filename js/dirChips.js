@@ -1,11 +1,7 @@
 function createChip($dirChip) {
   var chipName = String($dirChip);
-  var chipNameQ = "\'" + $dirChip + "\'";
   var chipID = chipName.replace(/\s+/g, '');
-  console.log(chipName);
-  console.log(chipID);
-  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons add' onclick='addChip(\""+chipName+"\")'>add</i></div>";
-  console.log(chip);
+  var chip = "<div id='"+ chipID +"' class='chip'>" + chipName + "<i class='material-icons add' onclick='addChip(\""+ chipName +"\")'>add</i></div>";
   $('#addChipLine').append(chip);
 }
 
