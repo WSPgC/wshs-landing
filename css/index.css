@@ -14,12 +14,21 @@ html {
   user-select: none;
 }
 
+@media only screen and (max-width: 600px) {
+  #myNav-title {
+    width: 50vw !important;
+    font-size: 2rem !important;
+    padding: 0.7815rem;
+  }
+}
+
 #myNav-title {
-  cursor: default;
+  width: 25vw;
+  cursor: pointer;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 4rem;
   margin: auto;
-  padding: 25px;
+  padding: 1.563rem;
   background-color: var(--md-red-400);
   /*Below transitions are used when making the SOUTH header large again, when user scrolls back to top*/
   -webkit-transition: all 0.1s ease;
