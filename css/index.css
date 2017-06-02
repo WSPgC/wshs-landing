@@ -129,6 +129,8 @@ input[type="search"] {
 
 #addChipLine {
   margin-bottom: 5vh;
+  transition: .1s linear;
+  -webkit-transition: .1s linear;
 }
 
 .add {
