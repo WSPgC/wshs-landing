@@ -1,4 +1,5 @@
 @import url("colors.var.css");
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 html {
   /*background-color: #212121;*/
 }
@@ -20,6 +21,7 @@ html {
 }
 
 #myNav-title {
+  font-family: 'Archivo Black', sans-serif;
   /*width: 25vw;*/
   cursor: pointer;
   font-weight: bold;
