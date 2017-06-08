@@ -5,7 +5,19 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('select').material_select();
-  });
+  $('select').material_select();
+});
 
 $(".button-collapse").sideNav();
+
+$(document).ready(function() {
+  $('.tooltipped').tooltip({
+    delay: 50
+  });
+});
+
+var clipboard = new Clipboard('button');
+clipboard.on('success', function(e) {
+    e.clearSelection();
+    showTooltip(e.trigger, 'Copied!');
+});

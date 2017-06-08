@@ -7,6 +7,7 @@ html {
 #content {
   margin-top: 12vh;
 }
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -95,9 +96,9 @@ input[type="search"] {
 }
 
 .material-tooltip {
-  padding: 5px 4px;
-  font-size: 0.8em;
-  white-space: pre;
+  padding: 5px 4px !important;
+  font-size: 0.8em !important;
+  white-space: pre !important;
 }
 
 #toc {
@@ -151,15 +152,24 @@ input[type="search"] {
   }
 }
 
-.card.horizontal .card-image {
-  max-width: 10% !important;
-}
-
-
 .card-image {
-
+  width: 100px;
+  /*height: 125px;*/
+  background: url('../res/img/davatar.png') no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.cardImage {
-  width: 50% !important;
+.topCard {
+  padding-bottom: 12px !important;
+}
+
+.bottomCard {
+  padding-top: 12px !important;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
 }
