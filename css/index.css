@@ -4,10 +4,6 @@ html {
   /*background-color: #212121;*/
 }
 
-.navbar-fixed {
-  z-index: auto !important;
-}
-
 #content {
   margin-top: 12vh;
 }
@@ -141,4 +137,29 @@ input[type="search"] {
   font-size: 16px;
   line-height: 32px;
   padding-left: 8px;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 50%;
+  }
+}
+
+.card.horizontal .card-image {
+  max-width: 10% !important;
+}
+
+
+.card-image {
+
+}
+
+.cardImage {
+  width: 50% !important;
 }
